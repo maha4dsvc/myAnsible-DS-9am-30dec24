@@ -5,6 +5,6 @@
   - name: i want to install apache2 webservr on node side
     apt:
       name: apache2
-      state: absent
+      state: present
       
 
