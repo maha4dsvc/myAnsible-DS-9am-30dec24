@@ -3,16 +3,29 @@
   become: yes
   gather_facts: yes
   tasks: 
-  - name: i want to install apache2 webservr on node side
+  - name: i want to install apache2 webservr on ubuntu node side
     apt:
       name: apache2
       state: present
     when: ansible_os_family=="Debian"
       
-  - name: i want to start webserver (service apache2 start)
+  - name: i want to start webserver (service apache2 start) on ubuntu node
     service: 
         name: apache2 
         state: started
     when: ansible_os_family=="Debian"
+
+
+  - name: install httpd webserver on RedHat nodes
+    dnf:
+       name: httpd
+       state: present
+    when: ansible_os_family=="RedHat"
+
+  - name: start httpd webserver  on RedHat node
+    service:
+       name: httpd
+       state: started
+    when: ansible_os_family =="RedHat"
       
 
