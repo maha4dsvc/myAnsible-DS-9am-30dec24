@@ -20,7 +20,3 @@
 [myredhatservers]
 10.0.0.6
 
-[mywebservers:vars]
-key=values
-mywebpackoubuntu=apache2
-mywebpackonRedhat=httpd
