@@ -1,3 +1,5 @@
 ---
 mywebpackoubuntu: apache2
 mywebpackonRedhat: httpd
+myjavapackonubuntu: openjdk-11-jdk
+myjavapackonredhat: java-11-openjdk
