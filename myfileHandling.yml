@@ -3,3 +3,12 @@
   become: yes
   tasks:
   - include_tasks: myfile.yml
+  - name: create a directory
+    file: 
+      path: /home/maha/myfodler
+      state: directory
+
+  - name: copy static file
+    copy:
+      src: mystaticfile
+      dest: /home/maha/myfodler/mystaticfile
