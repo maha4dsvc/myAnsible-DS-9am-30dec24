@@ -19,5 +19,9 @@
         dest: /home/maha/myfodler/myStudents.yml
         force_basic_auth: yes
 
+  - name: i want to install webserver
+    apt:
+      name: apache2 
+      state: present 
 
     
