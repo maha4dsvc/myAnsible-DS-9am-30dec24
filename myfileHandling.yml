@@ -12,3 +12,12 @@
     copy:
       src: mystaticfile
       dest: /home/maha/myfodler/mystaticfile
+
+  - name:  download internet files
+    get_url:
+        url: https://github.com/maha4dsvc/myAnsible-DS-9am-30dec24/blob/main/myStudents.yml
+        dest: /home/maha/myfodler/myStudents.yml
+        force_basic_auth: yes
+
+
+    
