@@ -1,0 +1,6 @@
+---
+- name: deploy java app
+  get_url:
+    url: https://my6amstrorage.blob.core.windows.net/myfolder/login.war
+    dest: /opt/tomcat/apache-tomcat-10.1.34/webapps/login.war
+    force_basic_auth: yes
